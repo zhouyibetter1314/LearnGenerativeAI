@@ -1,0 +1,163 @@
+% 来源：docs/08-diffusion-models.md
+% 仅建立章节框架；正文、公式、图表与习题内容待后续迁移。
+\chapter{扩散模型：把生成拆成逐步去噪}
+\label{chap:diffusion}
+
+\section*{本章要点}
+% TODO：迁移原章“先抓住这几件事”的要点。
+\contentplaceholder
+
+\section{前向加噪：一步就能构造任意噪声级别}
+\label{sec:diffusion-forward}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{噪声日程与前向马尔可夫链}
+\label{subsec:diffusion-schedule}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{任意时间步的闭式边缘分布}
+\label{subsec:diffusion-marginal}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{末端高斯近似及其条件}
+\label{subsec:diffusion-terminal}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{反向生成：从噪声到数据}
+\label{sec:diffusion-reverse}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{反向链的联合分布}
+\label{subsec:diffusion-joint}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{高斯反向转移与均值参数化}
+\label{subsec:diffusion-gaussian}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{为什么训练时可以得到去噪监督？}
+\label{sec:diffusion-supervision}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{三种条件分布的区别}
+\label{subsec:diffusion-conditionals}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{前向后验的解析均值与方差}
+\label{subsec:diffusion-posterior}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{训练监督与网络输入}
+\label{subsec:diffusion-inputs}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{训练目标：一个多层潜变量模型的 ELBO}
+\label{sec:diffusion-elbo}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{负对数似然的变分上界}
+\label{subsec:diffusion-bound}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{终点先验、中间转移与重建项}
+\label{subsec:diffusion-terms}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{从前向条件到反向 KL 的推导}
+\label{subsec:diffusion-derivation}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{边界时间步与后验间隙}
+\label{subsec:diffusion-endpoints}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{从预测均值到预测噪声}
+\label{sec:diffusion-noise-prediction}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{噪声预测与反向均值的对应关系}
+\label{subsec:diffusion-mean}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{高斯 KL 与加权噪声均方误差}
+\label{subsec:diffusion-weighted-mse}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{简化噪声目标与时间步重加权}
+\label{subsec:diffusion-simple-loss}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{训练与生成怎么进行？}
+\label{sec:diffusion-algorithms}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{随机时间步的小批量训练}
+\label{subsec:diffusion-training}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{时间条件与去噪网络架构}
+\label{subsec:diffusion-network}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{逐步反向采样与最后一步处理}
+\label{subsec:diffusion-sampling}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{干净数据估计与中间状态插值}
+\label{subsec:diffusion-clean-estimate}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{与 VAE 的联系，以及方法的代价}
+\label{sec:diffusion-connections}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{层次 VAE 视角与固定前向过程}
+\label{subsec:diffusion-hierarchical-vae}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{样本质量、采样成本与数据类型}
+\label{subsec:diffusion-cost}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{Score、SDE、DDIM、引导与潜在扩散的后续阅读}
+\label{subsec:diffusion-future}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{自检}
+\label{sec:diffusion-review}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{来源与延伸阅读}
+\label{sec:diffusion-reading}
+% TODO：补充本节内容。
+\contentplaceholder

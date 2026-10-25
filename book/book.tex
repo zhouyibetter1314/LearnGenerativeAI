@@ -1,0 +1,54 @@
+% !TeX program = xelatex
+% 编译时以 book/ 为工作目录；正文按主题拆分在 content/。
+\documentclass[UTF8,zihao=-4,oneside,openany,fontset=fandol]{ctexbook}
+
+\usepackage[a4paper,margin=2.6cm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[unicode,hidelinks]{hyperref}
+
+\graphicspath{{../figures/}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+% 空白段落让仅含标题的框架正常分页；填写正文时删除对应占位命令。
+\newcommand{\contentplaceholder}{\par\noindent\mbox{}\par}
+\hypersetup{
+  pdftitle={生成式人工智能：从概率建模到扩散模型},
+  bookmarksnumbered=true,
+  bookmarksdepth=2
+}
+
+\title{生成式人工智能\\[0.5em]\large 从概率建模到扩散模型}
+\author{}
+\date{}
+
+\begin{document}
+\raggedbottom
+
+\frontmatter
+\hypersetup{pageanchor=false}
+\maketitle
+\hypersetup{pageanchor=true}
+\tableofcontents
+% 前置部分保留目录条目，但不出现 0.1 等正文式编号。
+\setcounter{secnumdepth}{-1}
+\input{content/00_reading_guide}
+\input{content/00_notation}
+
+\mainmatter
+\setcounter{secnumdepth}{2}
+\input{content/01_intro}
+\input{content/02_math}
+\input{content/03_ar}
+\input{content/04_mle}
+\input{content/05_vae}
+\input{content/06_nf}
+\input{content/07_gan}
+\input{content/08_diffusion}
+
+\appendix
+\input{content/appendix_formulas}
+\input{content/appendix_sources}
+
+\end{document}

@@ -1,0 +1,183 @@
+% 来源：docs/05-latent-variable-models-and-vae.md
+% 仅建立章节框架；正文、公式、图表与习题内容待后续迁移。
+\chapter{潜变量模型与变分自编码器}
+\label{chap:vae}
+
+\section*{本章要点}
+% TODO：迁移原章“先抓住这几件事”的要点。
+\contentplaceholder
+
+\section{为什么引入看不见的变量？}
+\label{sec:vae-motivation}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{联合分布、先验、条件分布与后验}
+\label{subsec:vae-joint}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{高斯混合模型与分量后验}
+\label{subsec:vae-gmm}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{连续潜变量与神经网络条件分布}
+\label{subsec:vae-continuous}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{困难在哪里：边缘化与后验}
+\label{sec:vae-inference}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{边缘似然与后验的计算困难}
+\label{subsec:vae-marginalization}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{重要性采样与提议分布}
+\label{subsec:vae-importance-sampling}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{似然估计与对数似然估计的区别}
+\label{subsec:vae-log-bias}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{ELBO：将难算的对数似然变成可优化目标}
+\label{sec:vae-elbo}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{从 Jensen 不等式推导证据下界}
+\label{subsec:vae-jensen}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{后验 KL 间隙与变分推断}
+\label{subsec:vae-posterior-gap}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{与 EM 算法的联系}
+\label{subsec:vae-em}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{重建对数似然与先验正则}
+\label{subsec:vae-decomposition}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{VAE：用两个网络实现变分学习}
+\label{sec:vae-networks}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{编码器与摊销推断}
+\label{subsec:vae-amortized}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{解码器与观测分布假设}
+\label{subsec:vae-observation}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{对角高斯后验的闭式 KL}
+\label{subsec:vae-gaussian-kl}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{负 ELBO 与训练损失}
+\label{subsec:vae-negative-elbo}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{重参数化：如何穿过采样求梯度？}
+\label{sec:vae-reparameterization}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{高斯重参数化与路径梯度}
+\label{subsec:vae-pathwise}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{小批量训练流程}
+\label{subsec:vae-training}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{先验采样与解码生成}
+\label{subsec:vae-generation}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{为什么重建好还不够？}
+\label{sec:vae-reconstruction}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{普通自编码器与潜在空间}
+\label{subsec:vae-autoencoder}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{聚合后验与先验失配}
+\label{subsec:vae-aggregated-posterior}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{重建与正则之间的取舍}
+\label{subsec:vae-balance}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{重要变体与局限}
+\label{sec:vae-variants}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{\texorpdfstring{$\beta$}{beta}-VAE：控制潜在信息容量}
+\label{subsec:vae-beta-vae}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{后验坍塌：模型不再使用潜变量}
+\label{subsec:vae-collapse}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{VQ-VAE：用码本学习离散表示}
+\label{subsec:vae-vq-vae}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{码本损失、承诺损失与直通梯度}
+\label{subsec:vae-vq-optimization}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{离散索引先验与 VQ-VAE-2}
+\label{subsec:vae-discrete-prior}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\subsection{后续改进方向}
+\label{subsec:vae-future}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{自检}
+\label{sec:vae-review}
+% TODO：补充本节内容。
+\contentplaceholder
+
+\section{来源与延伸阅读}
+\label{sec:vae-reading}
+% TODO：补充本节内容。
+\contentplaceholder
